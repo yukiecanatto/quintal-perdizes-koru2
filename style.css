@@ -12,12 +12,6 @@
     
 }
 
-body {
-    min-height: 100vh;
-    background: url('https://wallpapers.com/images/featured/golden-retriever-868pt1q54ing74u9.jpg');
-    background-size: cover;
-    background-position: center;
-}
 
 .header {
     position: fixed;
@@ -58,4 +52,14 @@ body {
 
 .navbar a:hover::before {
     width: 100%;
+}
+
+.div-main .section-conteudo{
+    border-bottom: 5px solid #fff;
+    max-width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    background-image: url('/images/goldenBackGround.jpg');
+    background-size: 100%;
+    background-position: center;
 }
