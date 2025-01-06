@@ -1,5 +1,5 @@
 /* Reset do style da página, para tirar todos os estilos antes de começar a estilizar */
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,4 +7,11 @@
     font-weight: initial;
     text-align: initial;
     
-} */
+}
+
+.div-main .section-conteudo{
+    border-bottom: 5px solid #fff;
+    background-color: seagreen;
+    max-width: 100vw;
+    height: 100vh;
+}
