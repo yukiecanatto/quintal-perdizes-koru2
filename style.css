@@ -7,6 +7,7 @@
     font-weight: initial;
     text-align: initial;
     
+
     /*fonte teste*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
@@ -62,4 +63,5 @@
     background-image: url('/images/goldenBackGround.jpg');
     background-size: 100%;
     background-position: center;
+
 }
