@@ -7,11 +7,61 @@
     font-weight: initial;
     text-align: initial;
     
+
+    /*fonte teste*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
 }
 
 .div-main .section-conteudo{
     border-bottom: 5px solid #fff;
-    background-color: seagreen;
     max-width: 100vw;
     height: 100vh;
+    max-height: 100vh;
+    background-image: url('/images/goldenBackGround.jpg');
+    background-size: 100%;
+    background-position: center;
+
 }
