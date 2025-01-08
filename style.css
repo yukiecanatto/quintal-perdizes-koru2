@@ -65,3 +65,26 @@
     background-position: center;
 
 }
+
+.flex-conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+h1 {
+    font-size: 100px;
+    color: #fff;
+}
+
+.footer-conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
