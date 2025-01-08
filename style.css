@@ -14,6 +14,7 @@
 }
 
 
+/*header Navbar*/
 .header {
     position: fixed;
     width: 100%;
@@ -55,6 +56,8 @@
     width: 100%;
 }
 
+
+/*sections*/
 .div-main .section-conteudo{
     border-bottom: 5px solid #fff;
     max-width: 100vw;
@@ -88,3 +91,45 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+
+
+/* Contatos */
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    
+}
+
+form > label {
+    align-self: flex-start;
+}
+
+label {
+    color: #fff;
+}
+
+input {
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+}
+
+button {
+    margin-top:20px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+
+}
+button:hover {
+    color: #fff;
+    background-color: orange;
+    transition: 0.5s;
+}
+
