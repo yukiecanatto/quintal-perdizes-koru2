@@ -69,6 +69,28 @@
     background-color: #fd7e14 !important;
 }
 
+button.page-link {
+    color: #fd7e14;
+    outline: none;
+    border: 1px solid #fd7e14;
+}
+
+select.form-select.form-select-sm {
+    color: #fd7e14;
+    border-radius: 40px;
+    outline: none;
+    border: 1px solid #fd7e14; 
+}
+
+select.form-select.form-select-sm:hover {
+    color: #535353;
+    transition: 0.5s;
+}
+
+li.nav-item.botao-login-navbar {
+    margin-left: 3rem;
+}
+
 
 
 
