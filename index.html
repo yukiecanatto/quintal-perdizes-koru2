@@ -11,6 +11,7 @@
 
     <!-- Link do bootstrap 5.3 -->
 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -79,9 +80,9 @@
      
     
     <!-- início main -->
-    <main>
+    <main class="mb-5">
 
-      <!-- carrousel via bootstrap -->
+      <!-- carrossel via bootstrap -->
     <section id="carousel">
     
         <!-- slider/indicadores do carrousel -->
@@ -95,7 +96,7 @@
                     aria-label="Slide 3"></button>
             </div>
     
-            <!-- imagens do carrsousel -->
+            <!-- imagens do carrossel -->
             <div class="carousel-inner carousel">
     
                 <!-- linha que contem o intervalo da imagem (data-bs-interval="") -->
@@ -152,54 +153,62 @@
       <!-- fim carousel -->
     
     <!-- início home -->
-    <section id="home">  
-        <div>
-         <div>
-           <!-- imagem da seção 1 -->
-            <div>
-             <img src="./img/goldenBackGround.jpg" class="img-fluid" width="100%" usemap="#carousel-image4">
-             <map name="#carousel-image4">
-                <area target="_self" alt="" href="" coords="" shape="default">
-            </map>
-            <h4>
-                Serviços e Espaço
-            </h4>
-            <p>
-                Nosso espaço é projetado para proporcionar conforto e diversão, com áreas seguras e supervisionadas para brincadeiras, descanso e socialização.<br>
-                Oferecemos serviços de hospedagem, creche, banho e adestramento, além de uma seleção de produtos cuidadosamente escolhidos para o bem-estar dos cães. <br>
-                Aqui, cada detalhe é pensado para que os pets se sintam em casa e os tutores possam confiar plenamente no cuidado oferecido.<br>
-                Se você busca um lugar onde seu cão será tratado com todo o carinho e atenção que ele merece, o Quintal Perdices é a escolha certa.<br> 
-                Venha nos conhecer e faça parte da nossa família!
-            </p>
-            
-            <h4>Serviços de Banho e Adestramento</h4>
-            <p>
-                No Quintal Perdices, além de oferecer um espaço seguro e acolhedor para os cães, também cuidamos do bem-estar físico e comportamental dos pets através dos nossos serviços de banho e adestramento. 
-                Nosso objetivo é garantir que os cães não apenas estejam limpos e bem-cuidados, mas também felizes e bem-educados, proporcionando uma convivência harmoniosa com seus tutores.
-            </p>
-             
-           </div>
-           <!-- fim da imagem da seção 1 -->
-           <!-- imagem da seção 2 -->
-           <div>
-             <img src="./img/filhoteGoldenBackGround.jpg" class="img-fluid" width="100%" usemap="#carousel-image5">
-             <map name="#carousel-image5">
-                <area target="_self" alt="T" href="" coords="" shape="default">
-            </map>
-           </div>
-           <!-- fim imagem da seção 2 -->
-           <!-- imagem da seção 3 -->
-           <div>
-             <img src="./img/filhoteGoldenBackGround.jpg" class="img-fluid" width="100%" usemap="#carousel-image5">
-             <map name="#carousel-image5">
-                <area target="_self" alt="" href="" coords="" shape="default">
-            </map>
-           </div>
-           <!-- fim imagem da seção 3 -->
-    
-         </div>
+
+    <section id="home" class="min-vh-100 d-flex align-items-center mb-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Imagem -->
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="./img/imagens alteradas/Cachorro 5.png" class="img-fluid h-100 w-100 rounded-5" alt="Espaço Quintal" usemap="#creche">
+                    <!-- map area para a imagem ser clicável -->
+                    <map name="#creche">
+                        <area target="_self" alt="" href="servicos.html#creche" coords="" shape="default">
+                    </map>
+                </div>
+                <!-- Texto -->
+                <div class="col-md-6 text-center text-md-start py-3">
+                    <h4>Espaço Quintal</h4>
+                    <p class="text-start">
+                        Nosso espaço é projetado para proporcionar conforto e diversão, com áreas seguras e supervisionadas para brincadeiras, descanso e socialização.<br>
+                        Oferecemos serviços de hospedagem, creche, banho e adestramento, além de uma seleção de produtos cuidadosamente escolhidos para o bem-estar dos cães. <br>
+                        Aqui, cada detalhe é pensado para que os pets se sintam em casa e os tutores possam confiar plenamente no cuidado oferecido.
+                        <br>
+                        <br>
+                        Se você busca um lugar onde seu cão será tratado com todo o carinho e atenção que ele merece, o Quintal Perdices é a escolha certa.<br> 
+                        Venha nos conhecer e faça parte da nossa família!
+                    </p>
+                </div>
+            </div>
         </div>
-       </section>
+    </section>
+    
+    <section id="banho-adestramento" class="min-vh-100 d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Imagem -->
+                <div class="col-md-6 d-flex justify-content-center align-items-center order-1 order-md-2">
+                    <img src="./img/imagens alteradas/Adestramento/Adestramento 3.png" class="img-fluid h-100 w-100 rounded-5" alt="Banho e Adestramento" usemap="#adestramento">
+                    <!-- map area para a imagem ser clicável -->
+                    <map name="#adestramento">
+                        <area target="_self" alt="" href="servicos.html#adestramento" coords="" shape="default">
+                    </map>
+                </div>
+                <!-- Texto -->
+                <div class="col-md-6 text-center text-md-start py-3 order-2 order-md-1">
+                    <h4>Banho e Adestramento</h4>
+                    <p class="text-start">
+                        No Quintal Perdices, além de oferecer um espaço seguro e acolhedor para os cães, também cuidamos do bem-estar físico e comportamental dos pets através dos nossos serviços de banho e adestramento.
+                        <br>
+                        <br>
+                        Nosso objetivo é garantir que os cães não apenas estejam limpos e bem-cuidados, mas também felizes e bem-educados, proporcionando uma convivência harmoniosa com seus tutores.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
     </main>
     <!-- fim main -->
    
@@ -208,12 +217,13 @@
    <section>
     <footer class="footer-color p-4">
         <div class="container">
+            
             <div class="row">
                 <div class="col-sm-4 text-center">
                     <i class="bi bi-truck">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-truck rounded" viewBox="0 0 16 16">
                             <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
-                            <p> class="p-0 m-0">Frete grátis</p>
+                            <p class="p-0 m-0">Frete grátis</p>
                             <p>confira as regras</p>
                         </svg>
                      </i>
@@ -278,6 +288,14 @@
                     <p>Red Hot Chili Peppers</p>
                 </div>
             </div>
+        </div>
+
+        <div class="container container-fluid d-flex justify-content-center">
+        
+            <a href="index.html" class="quintal-logo">
+              <img src="./img/imagens alteradas/logo/Logo Quintal Perdizes  preto.png" width="300px">
+            </a>
+
         </div>
         
     </footer>
