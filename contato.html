@@ -80,54 +80,68 @@
     
     <!-- início main -->
     <main>
-    
-    <!-- início home -->
 
-    <section id="home">  
-        <p>
-            No Quintal Perdices, seu pet é parte da nossa família. Entre em contato conosco e descubra como podemos proporcionar uma experiência única de cuidado, segurança e diversão para seu amigo de quatro patas!
-        </p>
-        
-        <h4>Horário de Funcionamento</h4>
-        <p>
-            Estamos abertos para receber seu contato e visitas em horários convenientes:<br>
-            🕒 Segunda a Sexta: 8h00 às 18h00<br>
-            🕒 Sábado: 9h00 às 14h00<br>
-            🕒 Domingo e Feriados: Fechado
-        </p>
-        <div class="container h-100 fundo">
-            <div class="d-flex justify-content-center h-100 mt-5">
-                <div class="contato">
-
-                    <div class="d-flex justify-content-center form_container mb-5">
-                        <form>
-                            <div class="input-group mb-3">
-                                <input type="text" name="" class="form-control input_user" value="" placeholder="Seu nome">
-                            </div>
-                            <div class="input-group mb-3">
-                                <input type="email" name="" class="form-control input_user" value="" placeholder="Seu melhor e-mail">
-                            </div>
-                            <div class="input-group mb-3">
-                                <input type="text" name="" class="form-control input_user" value="" placeholder="Conte ai woof woof!">
-                            </div>
-                            
-                            <div class="d-flex justify-content-center mt-3">
-                                <button formaction="./index.html" id="enviarDados" type="submit" name="button" class="btn  btn-warning">Enviar</button>
-                            </div>
-    
-                            <script> 
-                                document.getElementById('enviarDados').addEventListener("click", () => {
-                                    alert('WOOFF! WOOFF! Entraremos em contato');
-                                });
-                            
-                            </script>
-                        </form>
+        <section id="contato" class="py-5">
+            <div class="container h-100 fundo">
+                
+                <div class="row align-items-center">
+                    
+                    <div class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex justify-content-center">
+                        <img src="img/imagens alteradas/Sorriso 2.png" alt="corgi sorrindo" class="img-fluid rounded-5">
                     </div>
-    
+        
+                    
+                    <div class="col-lg-6 col-12">
+                        
+                        <div class="mb-4 justify-content-center">
+                            <p class="text-start fw-bold fs-4">
+                                No Quintal Perdices, seu pet é parte da nossa família. Entre em contato conosco e descubra como podemos proporcionar uma experiência única de cuidado, segurança e diversão para seu amigo de quatro patas!
+                            </p>
+                        </div>
+        
+                        <!-- Formulário -->
+                        <div class="mb-5">
+                            <form class="w-100" style="max-width: 500px; margin: auto;">
+                                <div class="input-group mb-3">
+                                    <input type="text" name="" class="form-control input_user" placeholder="Seu nome">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="email" name="" class="form-control input_user" placeholder="Seu melhor e-mail">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <textarea name="" class="form-control input_user" rows="3" placeholder="Conte ai woof woof!"></textarea>
+                                </div>
+                                <div class="d-flex justify-content-center mt-3">
+                                    <button formaction="" id="enviarDados" type="submit" class="btn btn-warning">Enviar</button>
+                                </div>
+                                <script>
+                                    document.getElementById('enviarDados').addEventListener("click", () => {
+                                        alert('WOOFF! WOOFF! Entraremos em contato');
+                                        form.reset();
+                                    });
+                                </script>
+                            </form>
+                        </div>
+        
+                        
+                        <div class="text-start justify-content-center mt-4">
+                            <h4 class="fw-bold">
+                                Horário de Funcionamento
+                            </h4>
+
+                            <p>
+                                Estamos abertos para receber seu contato e visitas em horários convenientes:<br>
+                                🕒 Segunda a Sexta: 8h00 às 18h00<br>
+                                🕒 Sábado: 9h00 às 14h00<br>
+                                🕒 Domingo e Feriados: Fechado
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-       </section>
+        </section>
+        
+    
     </main>
     <!-- fim main -->
    
