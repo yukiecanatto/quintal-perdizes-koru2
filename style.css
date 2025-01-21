@@ -1,4 +1,14 @@
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: x-large;
+}
+
+
+
 
 /* #################################### NAVBAR BOOTSTRAP ################################## */
 
@@ -133,16 +143,17 @@ div.card-text.d-flex.card-frete {
 }
 
 
- strong.preco-12x{
+strong.preco-12x{
     font-size: 36px;
     color:#fd7e14;
     span{
         font-size: 15px;
         color: #000000;
     }
- }
+}
 
- article.produto-preco {
+
+article.produto-preco {
     div.estrelas{
         svg{
             fill: #fd7e14;
