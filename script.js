@@ -13,7 +13,10 @@ document.querySelectorAll('.botao-add-carrinho').forEach(button => {
 //Botão enviar do forms 'contato.html'
 document.getElementById('enviarDados').addEventListener("click", (event) => {
     event.preventDefault();
-    alert('WOOFF! WOOFF! Entraremos em contato');
+    
+    // Exibe o modal de sucesso
+    const modal = new bootstrap.Modal(document.getElementById('addToCartModal'));
+    modal.show();
     
     // Reseta o form
     const form = document.querySelector("form");
