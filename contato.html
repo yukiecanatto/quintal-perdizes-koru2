@@ -102,21 +102,30 @@
                         <!-- Formulário -->
                         <div class="mb-5">
                             <form class="w-100" style="max-width: 500px; margin: auto;">
-                                <div class="input-group mb-3">
-                                    <input type="text" name="" class="form-control input_user" placeholder="Seu nome">
+                                <div class="mb-3">
+                                    <input type="text" name="nome" class="form-control input_user" placeholder="Seu nome">
+                                    <div class="error-message text-danger" id="nomeError"></div> <!-- Mensagem de erro -->
                                 </div>
-                                <div class="input-group mb-3">
-                                    <input type="email" name="" class="form-control input_user" placeholder="Seu melhor e-mail">
+
+                                <div class="mb-3">
+                                    <input type="email" name="email" class="form-control input_user" placeholder="Seu melhor e-mail">
+                                    <div class="error-message text-danger" id="emailError"></div> <!-- Mensagem de erro -->
                                 </div>
-                                <div class="input-group mb-3">
-                                    <textarea name="" class="form-control input_user" rows="3" placeholder="Conte ai woof woof!"></textarea>
+
+                                <div class="mb-3">
+                                    <textarea name="mensagem" class="form-control input_user" rows="3" placeholder="Conte ai woof woof!"></textarea>
+                                    <div class="error-message text-danger" id="mensagemError"></div> <!-- Mensagem de erro -->
                                 </div>
+
                                 <div class="d-flex justify-content-center mt-3">
-                                    <button formaction="" id="enviarDados" type="submit" class="btn btn-warning">Enviar</button>
+                                    <button formaction="" id="enviarDados" type="submit" class="btn btn-warning">
+                                        Enviar
+                                    </button>
                                 </div>
-                                
                             </form>
                         </div>
+
+                        
         
                         
                         <div class="text-start justify-content-center mt-4">
@@ -223,19 +232,19 @@
 
 
    <!-- MODAL BOTÃO ENVIAR DADOS -->
-   <div class="modal fade" id="addToCartModal" tabindex="-1" aria-labelledby="addToCartModalLabel" aria-hidden="true">
+   <div class="modal fade" id="sendModal" tabindex="-1" aria-labelledby="sendModalLabel" aria-hidden="true">
     <div class="modal-dialog">
     <div class="modal-content">
         <div class="modal-header">
-        <h5 class="modal-title" id="addToCartModalLabel">WOOF! WOOF!</h5>
+        <h5 class="modal-title" id="sendModalLabel">WOOF! WOOF!</h5>
         <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-        WOOFF! WOOFF! Entraremos em contato
+        <div class="modal-body" id="sendModalMessage">
+            <!-- A mensagem será alterada dinamicamente -->
         </div>
         <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        <!-- <button type="button" class="btn btn-primary">Ir para o Carrinho</button> -->
+    
         </div>
     </div>
     </div>
