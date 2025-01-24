@@ -4,10 +4,8 @@ body {
 }
 
 p {
-    font-size: x-large;
+    font-size: large;
 }
-
-
 
 
 /* #################################### NAVBAR BOOTSTRAP ################################## */
@@ -100,7 +98,6 @@ select.form-select.form-select-sm:hover {
 li.nav-item.botao-login-navbar {
     margin-left: 3rem;
 }
-
 
 
 
