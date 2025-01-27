@@ -102,21 +102,36 @@
                         <!-- Formulário -->
                         <div class="mb-5">
                             <form class="w-100" style="max-width: 500px; margin: auto;">
-                                <div class="input-group mb-3">
-                                    <input type="text" name="" class="form-control input_user" placeholder="Seu nome">
+                                <div class="mb-3">
+                                    <input type="text" name="nome" class="form-control input_user" placeholder="Seu nome">
+
+                                    <!-- Mensagem de erro -->
+                                    <div class="error-message text-danger" id="nomeError"></div>
                                 </div>
-                                <div class="input-group mb-3">
-                                    <input type="email" name="" class="form-control input_user" placeholder="Seu melhor e-mail">
+
+                                <div class="mb-3">
+                                    <input type="email" name="email" class="form-control input_user" placeholder="Seu melhor e-mail">
+
+                                    <!-- Mensagem de erro -->
+                                    <div class="error-message text-danger" id="emailError"></div>
                                 </div>
-                                <div class="input-group mb-3">
-                                    <textarea name="" class="form-control input_user" rows="3" placeholder="Conte ai woof woof!"></textarea>
+
+                                <div class="mb-3">
+                                    <textarea name="mensagem" class="form-control input_user" rows="3" placeholder="Conte ai woof woof!"></textarea>
+
+                                    <!-- Mensagem de erro -->
+                                    <div class="error-message text-danger" id="mensagemError"></div>
                                 </div>
+
                                 <div class="d-flex justify-content-center mt-3">
-                                    <button formaction="" id="enviarDados" type="submit" class="btn btn-warning">Enviar</button>
+                                    <button formaction="" id="enviarDados" type="submit" class="btn btn-warning">
+                                        Enviar
+                                    </button>
                                 </div>
-                                
                             </form>
                         </div>
+
+                        
         
                         
                         <div class="text-start justify-content-center mt-4">
@@ -220,6 +235,26 @@
     </footer>
    </section>
    <!-- fim footer  -->
+
+
+   <!-- MODAL BOTÃO ENVIAR DADOS -->
+   <div class="modal fade" id="sendModal" tabindex="-1" aria-labelledby="sendModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content container-fluid align-items-center">
+        <div class="modal-header container-fluid justify-content-around">
+        <h5 class="modal-title" id="sendModalLabel">WOOF! WOOF!</h5>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="sendModalMessage">
+            <!-- A mensagem será alterada dinamicamente -->
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-warning" data-dismiss="modal">Fechar</button>
+    
+        </div>
+    </div>
+    </div>
+    </div>
    
    
    
@@ -230,5 +265,7 @@
        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-     </body>
-     </html>
+
+</body>
+
+</html>
