@@ -42,8 +42,14 @@ document.getElementById('enviarDados').addEventListener("click", (event) => {
         isValid = false;
     }
 
+     // Validação de e-mail
+     if (!email.value.includes('@') || !email.value.endsWith('.com')) {
+        emailError.textContent = "Por favor, insira um e-mail válido.";
+        isValid = false;
+    }
+
     if (mensagem.value === "") {
-        mensagemError.textContent = "Por favor, preencha a mensagem.";
+        mensagemError.textContent = "Por favor, insira uma mensagem.";
         isValid = false;
     }
 
