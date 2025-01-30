@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
 
@@ -91,7 +90,7 @@
     <!-- carrossel via bootstrap -->
     <section id="carousel">
     
-        <!-- slider/indicadores do carrousel -->
+        <!-- slider/indicadores do carrossel -->
         <div id="carouselExampleCaptions" class="carousel slide carousel-fade mb-5" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -107,7 +106,7 @@
     
                 <!-- linha que contem o intervalo da imagem (data-bs-interval="") -->
                 <div class="carousel-item active" data-bs-interval="6000">
-                    <!-- imagem do carrousel -->
+                    <!-- imagem do carrossel -->
                     <img src="img/carrossel_sache.jpg" alt="Saches-Nutriflesh" class="d-block w-100" alt="" usemap="#carousel-image1">
                     <!-- map area para a imagem ser clicável -->
                     <map name="#carousel-image1">
@@ -119,7 +118,7 @@
     
                 <!-- linha que contem o intervalo da imagem (data-bs-interval="") -->
                 <div class="carousel-item" data-bs-interval="6000">
-                    <!-- imagem do carrousel -->
+                    <!-- imagem do carrossel -->
                     <img src="img/carrossel_peitoral.gif" alt="coleiras-guias-peitorais" class="d-block w-100" alt=" usemap="#carousel-image2">
                     <!-- map area para a imagem ser clicável -->
                     <map name="#carousel-image2">
@@ -130,7 +129,7 @@
     
                 <!-- linha que contem o intervalo da imagem (data-bs-interval="") -->
                 <div class="carousel-item" data-bs-interval="6000">
-                    <!-- imagem do carrousel -->
+                    <!-- imagem do carrossel -->
                     <img src="img/carrossel_antipulgas.jpg" alt="antipulgas" class="d-block w-100" alt="" usemap="#carousel-image3">
                     <!-- map area para a imagem ser clicável -->
                     <map name="#carousel-image3">
@@ -140,7 +139,7 @@
                 </div>
             </div>
     
-            <!-- botão de próximo e anterior do carrousel -->
+            <!-- botão de próximo e anterior do carrossel -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
@@ -155,7 +154,7 @@
         
     </section>
       
-      <!-- fim carousel -->
+    <!-- fim carousel -->
     
     <!-- início home -->
 
@@ -217,8 +216,65 @@
             </div>
         </div>
     </section>
+
+
+    <section id="carousel-depoimentos">
     
+        <!-- slider/indicadores do carrossel -->
+        <div id="carrossel-depoimentos" class="carousel slide carousel mt-5" data-bs-ride="carousel">
+            
+            <!-- Cards do carrossel -->
+            <div class="carousel-inner">
     
+                <!-- linha que contem o intervalo da imagem (data-bs-interval="") -->
+                <div class="carousel-item active" data-bs-interval="6000">
+                    <div class="card text-center mx-auto card-color" style="max-width: 600px;">
+                        <div class="card-body">
+                            <h5 class="card-title">yuu</h5>
+                            <p class="card-text">"WOOF! WOOF! WOOF!"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- linha que contem o intervalo da imagem (data-bs-interval="") -->
+                <div class="carousel-item" data-bs-interval="6000">
+                    <div class="card text-center mx-auto card-color" style="max-width: 600px;">
+                        <div class="card-body">
+                            <h5 class="card-title">yuki</h5>
+                            <p class="card-text">"AAAUUUUUHHHH!!!! WOOF! WOOF!"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- linha que contem o intervalo da imagem (data-bs-interval="") -->
+                <div class="carousel-item" data-bs-interval="6000">
+                    <div class="card text-center mx-auto card-color" style="max-width: 600px;">
+                        <div class="card-body">
+                            <h5 class="card-title">YUZÃO</h5>
+                            <p class="card-text">"AUU AUU AUU"</p>
+                        </div>
+                    </div>
+                </div>
+    
+                
+            </div>
+    
+            <!-- botão de próximo e anterior do carrossel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrossel-depoimentos"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrossel-depoimentos"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+    </section>
+
+
 
     </main>
     <!-- fim main -->
@@ -317,9 +373,13 @@
    
    
        <!-- JavaScript (Opcional) -->
+
+       <script src="./js/script.js"></script>
+              
        <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      
      </body>
      </html>
