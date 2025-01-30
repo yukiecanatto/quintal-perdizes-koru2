@@ -11,7 +11,7 @@ p {
 /* #################################### NAVBAR BOOTSTRAP ################################## */
 
 .nav-link:hover {
-    h5{
+    h4{
         color: #fd7e14;
         transition: 0.5s;
 
@@ -45,16 +45,12 @@ p {
     margin-left: -3;
 }
 
-*/
-
-
 
 /* ################################# FOOTER #################################### */
 
 .footer-color {
     background-color: #fd7e14;
 }
-
 
 /* ################################# PRODUTOS #################################### */
 
@@ -98,7 +94,6 @@ select.form-select.form-select-sm:hover {
 li.nav-item.botao-login-navbar {
     margin-left: 3rem;
 }
-
 
 
 /* ################################# PRODUTO #################################### */
