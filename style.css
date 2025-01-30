@@ -18,6 +18,11 @@ p {
     }
 } 
 
+/* .navbar .nav-item .nav-link.active {
+    text-decoration: underline;
+    color: #fd7e14;
+} */
+
 /* a.btn.btn-outline-light.ml-5 {
     transition: 0.5s;
 }
