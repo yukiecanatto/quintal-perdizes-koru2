@@ -39,7 +39,7 @@
     <!-- fim header -->
 
     <!-- início navbar -->
-    <nav class="navbar navbar-expand-sm navbar-light d-flex ">
+    <nav class="navbar navbar-expand-sm navbar-light d-flex sticky-top bg-white py-1">
       
         <div class="container container-fluid d-flex">
   
@@ -218,61 +218,58 @@
     </section>
 
 
-    <section id="carousel-depoimentos">
+    <section id="carousel-depoimentos" class="container-fluid d-flex flex-column justify-content-center align-items-center min-vh-100">
     
-        <!-- slider/indicadores do carrossel -->
-        <div id="carrossel-depoimentos" class="carousel slide carousel mt-5" data-bs-ride="carousel">
-            
-            <!-- Cards do carrossel -->
-            <div class="carousel-inner">
-    
-                <!-- linha que contem o intervalo da imagem (data-bs-interval="") -->
-                <div class="carousel-item active" data-bs-interval="6000">
-                    <div class="card text-center mx-auto card-color" style="max-width: 600px;">
-                        <div class="card-body">
-                            <h5 class="card-title">yuu</h5>
-                            <p class="card-text">"WOOF! WOOF! WOOF!"</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- linha que contem o intervalo da imagem (data-bs-interval="") -->
-                <div class="carousel-item" data-bs-interval="6000">
-                    <div class="card text-center mx-auto card-color" style="max-width: 600px;">
-                        <div class="card-body">
-                            <h5 class="card-title">yuki</h5>
-                            <p class="card-text">"AAAUUUUUHHHH!!!! WOOF! WOOF!"</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- linha que contem o intervalo da imagem (data-bs-interval="") -->
-                <div class="carousel-item" data-bs-interval="6000">
-                    <div class="card text-center mx-auto card-color" style="max-width: 600px;">
-                        <div class="card-body">
-                            <h5 class="card-title">YUZÃO</h5>
-                            <p class="card-text">"AUU AUU AUU"</p>
-                        </div>
-                    </div>
-                </div>
-    
-                
-            </div>
-    
-            <!-- botão de próximo e anterior do carrossel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carrossel-depoimentos"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carrossel-depoimentos"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        <div class="text-center px-4 mb-5">
+            <h3>Veja o que dizem nossos clientes</h3>
         </div>
-        
+    
+        <!-- Carrossel -->
+        <div class="w-100 d-flex justify-content-center">
+            <div id="carrossel-depoimentos" class="carousel slide w-100" data-bs-ride="carousel">
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="6000">
+                        <div class="card text-center mx-auto card-color" style="max-width: 600px; border-top-left-radius: 30px;  border-bottom-right-radius: 30px;">
+                            <div class="card-body">
+                                <img src="img/Cards_avaliações/Josi_final.png" class="img-fluid" style="margin-bottom: 15px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+    
+                    <div class="carousel-item active" data-bs-interval="6000">
+                        <div class="card text-center mx-auto card-color" style="max-width: 600px; border-top-left-radius: 30px;  border-bottom-right-radius: 30px;">
+                            <div class="card-body">
+                                <img src="img/Cards_avaliações/Solange_final.png" class="img-fluid" style="margin-bottom: 15px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+    
+                    <div class="carousel-item active" data-bs-interval="6000">
+                        <div class="card text-center mx-auto card-color" style="max-width: 600px; border-top-left-radius: 30px;  border-bottom-right-radius: 30px;">
+                            <div class="card-body">
+                                <img src="img/Cards_avaliações/Yuki_final.png" class="img-fluid" style="margin-bottom: 15px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrossel-depoimentos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrossel-depoimentos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    
     </section>
+    
+    
 
 
 
