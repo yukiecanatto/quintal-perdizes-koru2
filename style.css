@@ -66,6 +66,40 @@ p {
     transition: 0.5s;
 }
 
+.card-produto {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-produto:hover {
+    transform: scale(1.02);
+}
+
+/* Div dos detalhes */
+.card-produto::after {
+    content: "Detalhes";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+/* Exibe a div de detalhes */
+.card-produto:hover::after {
+    opacity: 1;
+}
+
+
 .ancora-card {
     text-decoration: none !important;
 }
